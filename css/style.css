@@ -1,0 +1,43 @@
+:root {
+  --color-dark: #0a0908;
+  --color-blue-dark: #22333b;
+  --color-beige-light: #eae0d5;
+  --color-beige-dark: #c6ac8f;
+  --color-brown: #5e503f;
+}
+
+body {
+  background-color: var(--color-beige-light);
+}
+h1 {
+  color: blue;
+  background-color: cadetblue;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+p {
+  color: #3f5177;
+}
+
+#silver {
+}
+
+#verde {
+  color: #2f8a32;
+  font-size: 25px;
+}
+#rojo {
+  color: #a02e1c;
+  font-weight: bold;
+}
+#violeta {
+  color: #6f137f;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.color {
+}
+.disenio {
+  background-color: #a02e1c;
+  font-size: 14px;
+}
