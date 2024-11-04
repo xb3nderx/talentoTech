@@ -4,6 +4,14 @@
   --color-beige-light: #eae0d5;
   --color-beige-dark: #c6ac8f;
   --color-brown: #5e503f;
+  --color-green-screen: #162a35;
+  --color-green-text: #7effa5;
+  --color-gray-btn: #6d6d65;
+}
+
+* {
+  border: 0px;
+  padding: 0px;
 }
 
 body {
@@ -14,6 +22,18 @@ h1 {
   background-color: cadetblue;
   font-size: 25px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.francois-one-regular {
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 p {
