@@ -9,21 +9,6 @@
   --color-gray-btn: #6d6d65;
 }
 
-* {
-  border: 0px;
-  padding: 0px;
-}
-
-body {
-  background-color: var(--color-beige-light);
-}
-h1 {
-  color: blue;
-  background-color: cadetblue;
-  font-size: 25px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
 .vt323-regular {
   font-family: "VT323", monospace;
   font-weight: 400;
@@ -36,28 +21,83 @@ h1 {
   font-style: normal;
 }
 
-p {
-  color: #3f5177;
+* {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
 }
 
-#silver {
+body {
+  background-color: var(--color-beige-light);
 }
 
-#verde {
-  color: #2f8a32;
-  font-size: 25px;
+.banner {
+  /* display: flex; */
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  overflow: hidden;
 }
-#rojo {
-  color: #a02e1c;
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre el contenedor sin deformarse */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Mantiene la imagen detrás del texto */
+}
+
+.banner span {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0%, -50%);
+  /*Centraeltexto*/
+  color: white;
+  /*Oelcolorqueprefieras*/
+  font-family: "Francois One", sans-serif;
+  font-size: 10vw;
+  /*Tamañodefuenterelativoalanchodelviewport*/
   font-weight: bold;
+  text-align: center;
+  z-index: 2;
 }
-#violeta {
-  color: #6f137f;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+nav {
+  background-color: var(--color-green-screen);
+  margin: 1.5vh 0vw;
+  padding: 2vh 2vw;
 }
-.color {
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  -ms-flex-align: center;
 }
-.disenio {
-  background-color: #a02e1c;
-  font-size: 14px;
+
+.botonNav {
+  display: block;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  color: var(--color-green-text);
+  text-decoration: none;
+  background-color: var(--color-gray-btn);
+  width: 7rem;
+  margin: 0.01rem 1rem;
+  padding: 0.3rem 0.3rem;
+  -webkit-border-radius: 0.75rem;
+  -moz-border-radius: 0.75rem;
+  -ms-border-radius: 0.75rem;
+  -o-border-radius: 0.75rem;
+}
+
+h1 {
+  color: blue;
+  background-color: cadetblue;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
