@@ -93,7 +93,7 @@ nav ul {
 }
 
 .botonEmer {
-  background-image: url("PreEntrega/images/ALTERT BACK.png"); /* Ruta de la imagen de fondo */
+  background-image: url("../images/ALTERT BACK.png"); /* Ruta de la imagen de fondo */
   background-size: cover; /* La imagen cubre todo el contenedor */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
@@ -157,9 +157,34 @@ main {
   transform: translateY(-50%);
 }
 
-h1 {
-  color: blue;
-  background-color: cadetblue;
-  font-size: 25px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+.textToRead {
+  padding-left: 2rem;
+  width: auto;
+  height: 40vh;
+  overflow-y: auto; /* Activa el desplazamiento vertical */
+  padding-right: 2rem;
+}
+
+.textToRead * {
+  font-family: "Francois One", sans-serif;
+  font-size: 2rem;
+  color: var(--color-blue-dark);
+}
+
+.textToRead h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.textToRead h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.textToRead p {
+  margin-bottom: 4rem;
+}
+
+.textToRead ul {
+  margin-left: 2rem;
 }
