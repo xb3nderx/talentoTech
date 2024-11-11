@@ -21,6 +21,13 @@
   font-style: normal;
 }
 
+.host-grotesk-footer {
+  font-family: "Host Grotesk", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   border: 0px;
   padding: 0px;
@@ -30,6 +37,16 @@
 
 body {
   background-color: var(--color-beige-light);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin: 2rem;
+  height: 45vh;
 }
 
 .banner {
@@ -101,11 +118,6 @@ nav ul {
   justify-content: flex-end;
 }
 
-main {
-  margin: 2rem;
-  height: 45vh;
-}
-
 .cuerpoHome {
   display: flex;
 }
@@ -143,6 +155,10 @@ main {
   width: 12rem;
 }
 
+.index li a:focus {
+  outline: 2px solid transparent; /* Elimina el contorno de enfoque en el enlace */
+}
+
 .index li::before {
   content: "";
   display: inline-block;
@@ -160,14 +176,14 @@ main {
 .textToRead {
   padding-left: 2rem;
   width: auto;
-  height: 40vh;
+  height: 50vh;
   overflow-y: auto; /* Activa el desplazamiento vertical */
   padding-right: 2rem;
 }
 
 .textToRead * {
   font-family: "Francois One", sans-serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--color-blue-dark);
 }
 
@@ -187,4 +203,83 @@ main {
 
 .textToRead ul {
   margin-left: 2rem;
+}
+
+footer {
+  background-color: var(--color-brown);
+  font-family: "Host Grotesk", serif;
+  font-style: bold;
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .separador {
+
+} */
+
+.barra1 {
+  width: 100vw;
+  height: 1rem;
+  background-color: var(--color-blue-dark);
+}
+
+.barra2 {
+  width: 100vw;
+  height: 0.2rem;
+  background-color: var(--color-green-text);
+}
+
+.textoFooter {
+  text-align: center; /* Alineación del texto */
+  padding: 1rem 0%; /* Espaciado interno */
+  color: white;
+  opacity: 30%;
+}
+
+form label {
+  display: inline-block;
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  color: var(--color-green-text);
+  background-color: var(--color-green-screen);
+  border-radius: 5px;
+  padding: 0.01rem 0.5rem;
+  width: 14rem;
+  height: 2rem;
+}
+
+form input {
+  width: 18rem;
+  height: 2rem;
+  align-items: normal;
+  display: inline;
+  margin-left: 2rem;
+}
+
+form textarea {
+  margin-left: 2rem;
+}
+
+.btnEnvio {
+  display: flex;
+  justify-content: center;
+}
+.button {
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  color: var(--color-green-text);
+  background-color: var(--color-green-screen);
+  border-radius: 5px;
+  padding: 0.01rem 0.5rem;
+  width: 14rem;
+  text-align: center;
+}
+
+.campos {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
 }
