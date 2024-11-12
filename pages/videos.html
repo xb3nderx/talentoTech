@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PaginaEjemplo</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,10 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Francois+One&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -29,54 +33,126 @@
 
       <nav>
         <ul>
-          <li>
-            <a class="botonNav" href="../index.html">HOME</a>
-          </li>
+          <li><a href="../index.html" class="botonNav">HOME</a></li>
           <li>
             <p class="botonNav">VIDEOS</p>
           </li>
           <li>
-            <a class="botonNav" href="pages/preguntasFrecuentes.html">FOTOS</a>
-          </li>
-          <li>
-            <a class="botonNav" href="pages/contacto.html">CONTACTO</a>
+            <a class="botonNav" href="contacto.html">CONTACTO</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h1>Pagina de Prueba</h1>
-        <h2>Subtitulo de N2</h2>
-      </section>
-      <section>
-        <h2>Tutorial HTML 5</h2>
+    <main class="grid-container">
+      <div class="grid-item">
         <iframe
-          width="640"
-          height="480"
-          src="https://www.youtube.com/embed/salY_Sm6mv4"
-          title="HTML in 5 minutes"
+          src="https://www.youtube.com/embed/C1op3mIWm3M?si=QG7G85jGS56stxw_"
+          title="Despegue F-18 Super Hornet - Shooter en acción"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-      </section>
-      <section>
-        <article>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iste
-            error reprehenderit a ipsum. Ea voluptas odit tenetur dolorem dolor.
-            Voluptatibus minus consectetur cumque, autem praesentium obcaecati
-            impedit ullam labore.
-          </p>
-        </article>
-      </section>
+        <p>Despegue F-18 Super Hornet - Shooter en acción</p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/M7oe8Xi-3PA?si=3sJr5c4nLu7oISh7"
+          title="F-18 Super Hornet │ El POTENTE CAZA de EE.UU con 20 AÑOS de SERVICIO ININTERRUMPIDO"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          F-18 Super Hornet │ El POTENTE CAZA de EE.UU con 20 AÑOS de SERVICIO
+          ININTERRUMPIDO
+        </p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/gMmP2kEP6Jw?si=q6wG4LBOhltgCkJP"
+          title="F/A-18: el Avispón para los portaaviones"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>F/A-18: el Avispón para los portaaviones</p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/wFM_a7JDDy4?si=bW1z8-JvM4ca5yvK"
+          title="F/A-18 Hornet | The American Twin Engine, Supersonic Combat Jet Made By McDonnell Douglas"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          F/A-18 Hornet | The American Twin Engine, Supersonic Combat Jet Made
+          By McDonnell Douglas
+        </p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/SIyF-uHlbDw?si=obY94SEL9-8V7_Yw"
+          title="What is the Difference Between F-18 Hornet and F-18 Super Hornet?"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>What is the Difference Between F-18 Hornet and F-18 Super Hornet?</p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/0mPpL_gpddE?si=FVxWwsLO7GcGT9xX"
+          title="DCS: F/A-18C Hornet Tutorial DEFINITIVO de arranque en frío"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>DCS: F/A-18C Hornet Tutorial DEFINITIVO de arranque en frío</p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/WSM2Y5QBlbo?si=WH2q2nvo7J4ST4ua"
+          title="F/A-18 Hornet Todo lo que necesitas saber, por el Teniente Vázquez"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>
+          F/A-18 Hornet Todo lo que necesitas saber, por el Teniente Vázquez
+        </p>
+      </div>
+      <div class="grid-item">
+        <iframe
+          src="https://www.youtube.com/embed/GD7a9oFNy6U?si=EM3QDxvZPQU84pHa"
+          title="Meiringen Air Base: Home of F/A-18 Hornet"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>Meiringen Air Base: Home of F/A-18 Hornet</p>
+      </div>
     </main>
 
     <footer>
-      <nav></nav>
+      <div class="separador">
+        <div class="barra1"></div>
+        <div class="barra2"></div>
+      </div>
+      <div class="textoFooter">
+        <p>DISEÑO WEB : Facundo Araujo</p>
+        <p>CONTACTO : facundoaraujo@gmail.com</p>
+        <p>© 2024 - CABA - Argentina</p>
+      </div>
     </footer>
   </body>
 </html>

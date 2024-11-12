@@ -283,3 +283,34 @@ form textarea {
   flex-direction: row;
   margin: 2rem 0;
 }
+
+.grid-container {
+  display: grid;
+  max-width: 100vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vw;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  overflow: hidden;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  height: 3fr;
+}
+
+.grid-item p {
+  font-family: "VT323", monospace;
+  font-size: 1rem;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-green-text);
+  background-color: var(--color-green-screen);
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  height: 2rem;
+}
