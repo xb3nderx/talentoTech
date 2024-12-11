@@ -314,3 +314,28 @@ form textarea {
   border-radius: 4px;
   height: 2rem;
 }
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  height: 3fr;
+}
+
+.card-name {
+  font-family: "VT323", monospace;
+  font-size: 2rem;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-green-text);
+  background-color: var(--color-green-screen);
+  margin-top: 0.5rem;
+  text-align: center;
+  /*padding: 0.3rem 0.5rem;*/
+  border-radius: 4px;
+  height: 2rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 50%;
+}
