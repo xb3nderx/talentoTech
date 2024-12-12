@@ -67,47 +67,6 @@ function generarProductos() {
   return productos;
 }
 
-
-
 let productos = generarProductos();
-console.log(productos);
-//armo un array de imagenes
-let imagProd = [
-  "../images/productos/front-F18-mug.webp", "../images/productos/FA-18-keyholder.jpg",
-  "../images/productos/FA-18-t-shirt.jpg", "../images/productos/FA-18-gorra.jpg",
-  "../images/productos/FA-18-Campera.webp", "../images/productos/FA-18-sunglasses.jpg",
-  "../images/productos/FA-18-model.jpg", "../images/productos/FA-18-poster.jpg"
-]
 
-//carga los prod en la pagina
-let container = document.getElementsByClassName("grid-container");
-
-for (let i = 0; i < productos.length; i++) {
-  let unDiv = document.createElement("div");
-  unDiv.classList.add("grid-card");
-
-  let pName = document.createElement("p");
-  pName.classList.add("card-name");
-  pName.innerHTML = productos[i].name.toUpperCase();
-
-  let imag = document.createElement("img");
-  imag.classList.add("card-image");
-  imag.src = imagProd[i];
-
-  let pDesc = document.createElement("p");
-  pDesc.classList.add("card-desc");
-
-  let btn = document.createElement("button");
-  btn.classList.add("card-btn-desc");
-
-  btn.textContent = "DESCRIPCION";
-  btn.onclick = () =>
-    (pDesc.innerHTML =
-      pDesc.innerHTML.trim() === "" ? productos[i].descripcion : "");
-  unDiv.appendChild(pName);
-  unDiv.appendChild(imag);
-  unDiv.appendChild(pDesc);
-
-  unDiv.appendChild(btn);
-  container[0].appendChild(unDiv);
-}
+localStorage.setItem("productos", JSON.stringify(productos));
