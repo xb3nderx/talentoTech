@@ -83,10 +83,6 @@ let imagProd = [
   "../images/productos/FA-18-keyholder.jpg",
   "../images/productos/FA-18-t-shirt.jpg",
   "../images/productos/FA-18-gorra.jpg",
-  "../images/productos/FA-18-Campera.webp",
-  "../images/productos/FA-18-sunglasses.jpg",
-  "../images/productos/FA-18-model.jpg",
-  "../images/productos/FA-18-poster.jpg",
 ];
 
 //carga los prod en la pagina

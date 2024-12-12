@@ -1,10 +1,35 @@
 // configuracion de productos con stock y dctos
 function cargarCarrito() {
-  const prods = JSON.parse(localStorage.getItem("productos"));
-  console.log(prods);
+  //  console.log(prods);
 }
-// console.log(productos);
-console.log("hola");
+const productos = JSON.parse(localStorage.getItem("productos"));
+console.log(productos);
+
+let divProds = document.getElementById("productos");
+
+for (let i = 0; i < productos.length; i++) {
+  let unDiv = document.createElement("div");
+  unDiv.classList.add("prod-carr");
+
+  let sName = document.createElement("span");
+  sName.classList.add("prod-name");
+  sName.innerHTML = productos[i].name.toUpperCase();
+
+  let sStock = document.createElement("span");
+  sStock.classList.add("prod-stock");
+  sStock.innerHTML = "stock: " + productos[i].amount;
+
+  let btn = document.createElement("button");
+  btn.classList.add("prod-btn");
+  btn.textContent = "AGREGAR";
+
+  btn.onclick = () => agregarAlCarrito();
+  unDiv.appendChild(sName);
+  unDiv.appendChild(sStock);
+  unDiv.appendChild(btn);
+
+  divProds.appendChild(unDiv);
+}
 /*
 const productos = {
 laptop: {
