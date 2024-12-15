@@ -94,7 +94,7 @@ for (let i = 0; i < productos.length; i++) {
 
   let pName = document.createElement("p");
   pName.classList.add("card-name");
-  pName.innerHTML = productos[i].name.toUpperCase();
+  pName.innerHTML = productos[i].nombre.toUpperCase();
 
   let imag = document.createElement("img");
   imag.classList.add("card-image");
